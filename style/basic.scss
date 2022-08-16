@@ -1,0 +1,90 @@
+// @import "./reset.scss";
+// @import "./flex.scss";
+
+.xy-widget-ghost {
+    border: 1px dashed $primary-color !important;
+    height: 86px;
+    width: 100%;
+    padding: 0 24px;
+
+    .component-icon,
+    .component-name {
+        display: none;
+    }
+
+    &.gird-2 {
+        width: 50%;
+    }
+    &.gird-3 {
+        width: 33.33%;
+    }
+
+    &.xy-widget-area {
+        height: 98px;
+    }
+
+    &.xy-widget-user-multiple,
+    &.xy-widget-department-multiple {
+        height: 126px;
+    }
+    &.xy-widget-table,
+    &.xy-widget-invoice-table {
+        height: 169px;
+        width: 100%;
+    }
+
+    &.xy-widget-tabs {
+        height: 318px;
+        width: 100%;
+    }
+
+    &.xy-widget-dataLink,
+    &.xy-widget-linkedRef {
+        width: 100%;
+    }
+
+}
+
+.xy-widget-chosen {
+    background-color: #{$primary-color + "22"} !important;
+}
+
+.xy-widget-table-ghost {
+    border: 1px dashed $primary-color !important;
+    height: 85px;
+    width: 220px;
+    .component-icon,
+    .component-name {
+        display: none;
+    }
+}
+
+.xy-widget-table-chosen {
+    // background-color: #{$primary-color+'22'} !important;
+    border: 1px dashed $primary-color !important;
+}
+
+.move{
+    cursor:move;
+}
+
+.border-none{
+    border:none;
+}
+
+.drop-content {
+    max-height: 280px;
+    overflow-y: hidden;
+    padding: 5px 15px 10px;
+}
+
+
+.modal-class {
+    .ant-modal-body {
+        padding: 0 24px;
+    }
+}
+
+.xy-dropdown {
+    min-width: 200px !important;
+}

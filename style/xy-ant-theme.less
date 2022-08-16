@@ -1,0 +1,132 @@
+@import './basic.scss'; //引入less
+// 默认环境
+@border-color-default: rgba(0, 0, 0, 0.12);
+// 广西环境
+// @border-color-default: rgba(0, 0, 0, 0.24);
+
+@primary-color: #1A7AF7; // 全局主色
+@link-color: #1A7AF7; // 链接色
+@success-color: #52c41a; // 成功色
+@warning-color: #faad14; // 警告色
+@error-color: #f5222d; // 错误色
+@font-size-base: 12px; // 主字号
+@heading-color: rgba(0, 0, 0, 0.85); // 标题色
+@text-color: rgba(0, 0, 0, 0.65); // 主文本色
+@text-color-secondary: rgba(0, 0, 0, 0.45); // 次文本色
+@disabled-color: rgba(0, 0, 0, 0.25); // 失效色
+@border-radius-base: 4px; // 组件/浮层圆角
+@border-color-base: #d9d9d9; // 边框色
+@box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.15); // 浮层阴影
+@border-color-base: @border-color-default; // #d9d9d9; // 边框色
+@pagination-height: 24px;
+
+.xy-form-model {
+
+    .xy-form-label {
+        height: 20px;
+        line-height: 20px;
+        color: @text-color;
+        &.h-40 {
+            height: 40px;
+        }
+        &.required::before {
+          color: @error-color;
+          font-size: 12px;
+          font-family: SimSun, sans-serif;
+          line-height: 1;
+          content: '*';
+        }
+    }
+
+    .ant-form-item {
+       margin-bottom: 0;
+       .ant-form-item-control {
+            padding: 0 0 20px;
+            line-height: 1;
+       }
+    }
+
+    .ant-form-extra {
+        padding-top: 0;
+        .ant-form-explain {
+            font-size: 12px;
+            height: 22px;
+            line-height: 22px;
+            white-space: nowrap;
+            color: #f5222d;
+        }
+    }
+
+    .ant-form-explain {
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        min-height: 20px;
+        text-align: left;
+        white-space: nowrap;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+
+.xy-pagination {
+    padding: 16px 0 24px;
+
+    //分页样式
+    .ant-pagination-item,
+    .ant-pagination-prev,
+    .ant-pagination-next,
+    .ant-pagination-jump-prev,
+    .ant-pagination-jump-next {
+        min-width: @pagination-height;
+        height: @pagination-height;
+        margin-right: 5px;
+        line-height: @pagination-height;
+        border-color: #dcdfe6;
+        font-size: 13px;
+    }
+
+    .ant-table-pagination.ant-pagination {
+        padding: 16px 0 24px;
+    }
+
+    .ant-select-selection--single .ant-select-selection__rendered {
+        line-height: 24px;
+    }
+
+    .ant-pagination-item {
+        a:hover {
+            color: @primary-color;
+        }
+    }
+
+    .ant-pagination-item-active {
+        border-color: none;
+        background: @primary-color;
+        color: #fff;
+
+        a {
+            color: #fff;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    .ant-select,
+    .ant-select-selection,
+    .ant-pagination-options-quick-jumper,
+    .ant-pagination-options-quick-jumper input {
+        height: @pagination-height;
+        line-height: @pagination-height;
+    }
+}
+
+// .xy-check-gx {
+//     .ant-checkbox-inner {
+//         border-color: @link-color;
+//     }
+// }

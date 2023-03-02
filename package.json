@@ -12,13 +12,12 @@
   ],
   "author": "",
   "license": "MIT",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "ant-design-vue": "^3.2.10",
     "loader-runner": "^4.3.0",
     "vue-scoped-deep-import-style-loader": "^1.0.9",
-    "vxe-table": "^4.2.3"
-  },
-  "devDependencies": {
+    "vxe-table": "^4.2.3",
     "@babel/core": "^7.18.10",
     "@babel/preset-env": "^7.18.10",
     "@rollup/plugin-babel": "^5.3.1",
